@@ -1,0 +1,96 @@
+<footer class="container-fluid bg-dark p-5">
+    <div class="row">
+        <div class="col-sm-3">
+            <h6 class="text-secondary">Home</h6>
+            <hr>
+            <p>
+					<a href="">Home</a>
+                <br><a href="">Menu</a>
+                <br><a href="">Services</a>
+                <br><a href="#contactAnchor">Contact</a>
+            </p>
+        </div>
+
+        <div class="col-sm-3">
+            <h6 class="text-secondary">Menu</h6>
+            <hr>
+
+            <h6 class="text-secondary">Breakfast</h6>
+            <p>
+                <a href="">Continental Breakfast</a>
+                <br><a href="">American Breakfast</a>
+                <br><a href="">English</a>
+            </p>
+
+            <h6 class="text-secondary">Services</h6>
+            <p>
+                <a href="">Small Event</a>
+                <br><a href="">Medium Event</a>
+                <br><a href="">Mega Event</a>
+            </p>
+
+        </div>
+
+        <div class="col-sm-3">
+            <h6 class="text-secondary">Services</h6>
+            <hr>
+
+            <h6 class="text-secondary">Weddings</h6>
+            <p>
+                <a href="#">Anniversary</a>
+                <br><a href="#">Dinner</a>
+                <br><a href="#">Birthdays</a>
+            </p>
+
+            <h6 class="text-secondary">Bridal Party</h6>
+            <p>
+                <a href="#">Graduation</a>
+                <br><a href="#">Community BBQ</a>
+                <br><a href="#">Conferences</a>
+            </p>
+
+            <h6 class="text-secondary">church Groups</h6>
+            <p>
+                <a href="#">Christmas Banquet</a>
+                <br><a href="#">All you can eat</a>
+                <br><a href="#">Post Natal Support</a>
+            </p>
+        </div>
+
+        <div class="col-sm-3" id="contactAnchor">
+            <h6 class="text-secondary">Contact</h6>
+            <hr>
+            <p>
+                <i class="fas fa-envelope"></i> ericboat44@icloud.com
+            </p>
+            <p>
+                <i class="fas fa-camera"></i> instagram 
+                <br><i class="fab fa-facebook-square"></i> facebook 
+                <br><i class="fab fa-twitter-square"></i> twitter 
+                <br><i class="fab fa-google-plus-square"></i> google+ 
+            </p>
+        </div>
+
+    </div>
+
+    <p class="text-center">francis &copy; 2019</p>
+</footer>
+
+<script>
+    $(function() {
+        // this is the page scrolling script
+        // see notes in the script.js file
+        $('.dropdown-item, .nav-item').on('click', function(e) {
+            if ( this.hash !== "" ) {
+                e.preventDefault();
+                var anchor = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(anchor).offset().top
+                }, 800, function() {
+                    window.location.hash = anchor;
+                });
+            }
+        });
+    });
+</script>

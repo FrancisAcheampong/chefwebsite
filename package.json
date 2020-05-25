@@ -1,0 +1,12 @@
+{
+    "name": "chefwebsite",
+    "version": "1.0.0",
+    "description": "Richard Chef site",
+    "main": "index.js",
+    "scripts": {
+        "deploy": "gh-pages-d dist"
+    },
+    "author": "francis",
+    "homepage": "https://francisacheampong.github.io/chefwebsite ",
+    "license": "ISC"
+}
